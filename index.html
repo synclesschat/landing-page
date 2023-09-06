@@ -144,7 +144,7 @@
           <dl class="mt-10 space-y-6 divide-y divide-neutral-900/10">
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="work" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">How does it work?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -164,7 +164,7 @@
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="install" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">How do I install it?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -179,16 +179,21 @@
               <dd class="mt-2 pr-12 answer hidden">
                 <p class="text-base leading-7 text-neutral-600">To install Syncless Chat, you need to</p>
                 <ol class="list-decimal list-inside text-neutral-600 pl-5">
-                  <li>Install the app from your CRM Marketplace (<a target="_blank" href="https://www.lessannoyingcrm.com/integrations" class="text-blue-500">Less Annoying CRM</a>).</li>
-                  <li>Install the Chrome Extension for <a target="_blank" href="https://chrome.google.com/webstore/detail/syncless-chat/bdllmlnhlmhegcomadhaanilnjjobmco" class="text-blue-500">WhatsApp Web</a>.</li>
+                  <li>Install the <a target="_blank" href="https://chrome.google.com/webstore/detail/syncless-chat/bdllmlnhlmhegcomadhaanilnjjobmco" class="text-blue-500">Chrome Extension</a>.</li>
+                  <li>Go to <a target="_blank" href="https://app.synclesschat.com" class="text-blue-500">Syncless Chat App</a> and click "Login with Less Annoying CRM"</li>
+                  <ul class="list-disc list-inside text-neutral-600 pl-5">
+                    <li>Fill your Less Annoying CRM credentials and log in, only needed if you are logged out of your account.</li>
+                    <li>Click "Allow access".</li>
+                  </ul>
+                  <li>Accept Terms of Use.</li>
+                  <li>Open WhatsApp Web. You should see Syncless Chat sidebar if you installed the app correctly</li>
                 </ol>
-                <p class="text-base leading-7 text-neutral-600">Once you installed the app correctly, you will see the Syncless Chat sidebar when you use WhatsApp Web.</p>
               </dd>
             </div>
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="whatsapp-app" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">Does it work with the WhatsApp app on my phone?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -207,7 +212,7 @@
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="sync" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">How can I sync my WhatsApp and CRM contacts?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -226,7 +231,7 @@
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="save-messages" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">How can I save messages to my CRM?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -245,7 +250,7 @@
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="cookies" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">I can't login. Why?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -275,7 +280,7 @@
 
             <div class="pt-6 question">
               <dt>
-                <button type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
+                <button id="help" type="button" class="question-header flex w-full items-start justify-between text-left text-neutral-900" aria-expanded="false">
                   <span class="text-base font-semibold leading-7">I can't find the answer to my question. Who can I talk to?</span>
                   <span class="ml-6 flex h-7 items-center">
                     <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -335,25 +340,34 @@
     images[index].classList.remove('hidden');
   }
 
-  const questionButtons = document.querySelectorAll(".question-header");
+  function toggleFaq() {
+    const questionButtons = document.querySelectorAll(".question-header");
 
-  questionButtons.forEach(button => {
-      button.addEventListener("click", function() {
-          const questionContainer = this.closest(".question");
-          const svgShow = questionContainer.querySelector(".text-blue-600");
-          const svgHide = questionContainer.querySelector(".text-blue-400");
+    questionButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            toggleAnswer(this);
+        });
+    });
+  }
 
-          if (svgShow.classList.contains("hidden")) {
-              svgShow.classList.remove("hidden");
-              svgHide.classList.add("hidden");
-          } else {
-              svgShow.classList.add("hidden");
-              svgHide.classList.remove("hidden");
-          }
+  if (window.location.hash) {
+    let hash = window.location.hash.substring(1);
+    const question = document.getElementById(hash);
+    console.log(question);
+    toggleAnswer(question);
+  }
 
-          const answer = questionContainer.querySelector(".answer");
-          answer.classList.toggle("hidden");
-      });
-  });
+  function toggleAnswer(button) {
+    const question = button.closest(".question");
+    const svgShow = question.querySelector(".text-blue-600");
+    const svgHide = question.querySelector(".text-blue-400");
 
+    svgShow.classList.toggle("hidden");
+    svgHide.classList.toggle("hidden");
+
+    const answer = question.querySelector(".answer");
+    answer.classList.toggle("hidden");
+  }
+
+  toggleFaq()
 </script>
